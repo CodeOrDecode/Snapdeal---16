@@ -71,6 +71,10 @@ const Afterloginhome = () => {
     navigate("/women");
   }
 
+  useEffect(() => {
+  navigate("/afterlogin")
+  }, [])
+  
   
 
   return (
