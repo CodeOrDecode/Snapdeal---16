@@ -2,23 +2,28 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/",
+            "permanent": true 
         },
         {
             "source": "/men(.*)",
-            "destination": "/men"
+            "destination": "/men",
+            "permanent": true 
         },
         {
             "source": "/women(.*)",
-            "destination": "/women"
+            "destination": "/women",
+            "permanent": true 
         },
         {
             "source": "/product(.*)",
-            "destination": "/product"
+            "destination": "/product",
+            "permanent": true 
         },
         {
             "source": "/afterlogin(.*)",
-            "destination": "/afterlogin"
+            "destination": "/afterlogin",
+            "permanent": true 
         }
     ]
 }
