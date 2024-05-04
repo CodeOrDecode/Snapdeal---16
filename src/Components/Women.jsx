@@ -5,6 +5,7 @@ import { FaAngleDown } from "react-icons/fa";
 import Footer from "../Allsimilar/Footer";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Afterloginnavbar from "../Allsimilar/Afterloginnavbar"
 
 const Women = () => {
 
@@ -36,7 +37,7 @@ const Women = () => {
 
   return (
     <>
-      <Navbar />
+      <Afterloginnavbar />
 
       <div className={style.mendivmain}>
         <div className={style.insidemen}>

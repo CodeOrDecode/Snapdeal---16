@@ -4,6 +4,7 @@ import style from "../Css/Product.module.css";
 import Footer from "../Allsimilar/Footer";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Afterloginnavbar from "../Allsimilar/Afterloginnavbar"
 
 const Product = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const Product = () => {
 
   return (
     <>
-      <Navbar />
+      <Afterloginnavbar />
 
       <div className={style.mainprodiv}>
         <div className={style.insidemain}>
