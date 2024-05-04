@@ -1,7 +1,10 @@
 {
     "rewrites": [
         {"source": "/(.*)", "destination": "/"},
-        {"source": "/afterlogin(.*)", "destination": "/afterlogin"}
+        {"source": "/afterlogin(.*)", "destination": "/afterlogin"},
+        {"source": "/men(.*)", "destination": "/men"},
+        {"source": "/women(.*)", "destination": "/women"},
+        {"source": "/product(.*)", "destination": "/product"}
 
     ]
 }
