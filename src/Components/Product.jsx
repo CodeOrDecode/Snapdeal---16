@@ -3,9 +3,10 @@ import Navbar from "../Allsimilar/Navbar";
 import style from "../Css/Product.module.css";
 import Footer from "../Allsimilar/Footer";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Product = () => {
-  
+  const navigate = useNavigate();
   const [changco1, setChangco1] = useState(false);
   const [changco2, setChangco2] = useState(false);
   const [changco3, setChangco3] = useState(false);
@@ -34,8 +35,8 @@ const Product = () => {
     setImage2(prodata.smallimg2);
     setImage3(prodata.smallimg3);
     setImage4(prodata.smallimg4);
+    navigate("/product");
   }, []);
-
 
   return (
     <>
@@ -46,32 +47,16 @@ const Product = () => {
           <div className={style.leftdiv1}>
             <div className={style.leftin1}>
               <div>
-                <img
-                  onClick={handleImage}
-                  src={image1}
-                  alt=""
-                />
+                <img onClick={handleImage} src={image1} alt="" />
               </div>
               <div>
-                <img
-                  onClick={handleImage}
-                  src={image2}
-                  alt=""
-                />
+                <img onClick={handleImage} src={image2} alt="" />
               </div>
               <div>
-                <img
-                  onClick={handleImage}
-                  src={image3}
-                  alt=""
-                />
+                <img onClick={handleImage} src={image3} alt="" />
               </div>
               <div>
-                <img
-                  onClick={handleImage}
-                  src={image4}
-                  alt=""
-                />
+                <img onClick={handleImage} src={image4} alt="" />
               </div>
             </div>
             <div className={style.leftin2}>
@@ -80,9 +65,7 @@ const Product = () => {
           </div>
 
           <div className={style.rightdiv1}>
-            <p className={style.prodes1}>
-             {title}
-            </p>
+            <p className={style.prodes1}>{title}</p>
             <div className={style.rullerco}></div>
             <span className={style.prodes3}>MRP</span>
             <span className={style.prodes2}>Rs. 1,199</span>

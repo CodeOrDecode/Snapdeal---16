@@ -30,6 +30,7 @@ const Men = () => {
 
   useEffect(() => {
     menProductData();
+    navigate("/men")
   }, []);
 
   return (
